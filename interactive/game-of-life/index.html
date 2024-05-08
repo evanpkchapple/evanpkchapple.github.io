@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <Title>Game of Life</Title>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Evan Chapple">
+    </head>
+    <body>
+        <header>
+			<div class="container">
+				<h1>Evan Chapple</h1>
+				<nav>
+					<ul>
+                        <li><a href="../../index.html">Home</a></li>
+						<li><a href="../../project.html">Projects</a></li>
+						<li><a href="../../education.html">Education</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+        <main>
+            <div id="board"></div>
+            <button id="start-game" onclick="toggleGame()">Start Game</button>
+            <button id="clear-game" onclick="clearBoard()">Clear Board</button>
+            
+            <script src="gol.js"></script>
+        </main>
+    </body>
+</html>

@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -120,16 +119,16 @@ footer {
 }
 
 .subsection li:hover {
-    background-color: #f0f0f0; /* Light grey background on hover */
+    background-color: #f0f0f0;
     cursor: default;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
 }
 
 .subsection li::before {
-    content: "🔹"; /* Blue diamond icon */
-    color: #2a9df4; /* Bright blue color */
+    content: "🔹";
+    color: #2a9df4;
     padding-right: 10px;
-    font-size: 1.2em; /* Adjust size of the icon */
+    font-size: 1.2em;
 }
 
 span.subtext {
@@ -258,7 +257,7 @@ span.subtext {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 20px auto;
-    width: 80%; /* Adjust width based on preference */
+    width: 80%;
 }
 
 .projects h2 {
@@ -274,11 +273,11 @@ span.subtext {
 .projects li {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #eee; /* Separates each project visually */
+    border-bottom: 1px solid #eee;
 }
 
 .projects li:last-child {
-    border-bottom: none; /* Removes border from the last item */
+    border-bottom: none;
 }
 
 .projects h3 {

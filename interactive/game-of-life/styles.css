@@ -1,0 +1,21 @@
+#board {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: dotted;
+}
+
+.cell {
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+
+.alive {
+    background-color: white;
+}
+
+.dead {
+    background-color: black;
+}
