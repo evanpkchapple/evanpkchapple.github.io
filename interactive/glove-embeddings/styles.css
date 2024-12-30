@@ -1,0 +1,119 @@
+h1 {
+  margin-top: 1rem;
+}
+
+#gameContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 70vh;
+  margin-top: 1rem;
+}
+
+#tileContainer {
+  flex: 1;
+  border: 2px dashed #999;
+  position: relative;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+#wordListContainer {
+  width: 200px;
+  border: 2px solid #ccc;
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+  overflow-y: auto;
+}
+
+#wordList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#wordList li {
+  padding: 0.25rem;
+  margin: 0.25rem 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+#wordList li:hover {
+  background: #e1e1e1;
+}
+
+.tile {
+  width: 70px;
+  height: 70px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  border: 2px solid #666;
+  border-radius: 10px;
+  cursor: grab;
+  position: absolute;
+  user-select: none;
+  margin: 5px;
+}
+
+.tile:hover {
+  opacity: 0.8;
+}
+
+.tile:active {
+  cursor: grabbing;
+}
+
+.tile.red-tile {
+  background-color: red;
+}
+
+#output {
+  margin-top: 1rem;
+}
+
+#tileSubmission {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+#newTileInput {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#addTileButton {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#tileSubmission {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#newTileInput, #addTileButton {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#newTileInput::placeholder {
+  color: #aaa;
+}
+
+#addTileButton:hover {
+  background-color: #e1e1e1;
+}
