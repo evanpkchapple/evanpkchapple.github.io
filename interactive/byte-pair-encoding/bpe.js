@@ -29,7 +29,7 @@ async function trainTokenizer() {
   let tokens = trainText.split('');
   learnedMerges = [];
 
-  const maxTrainingMerges = 200;
+  const maxTrainingMerges = 400;
 
   for (let step = 0; step < maxTrainingMerges; step++) {
     const pairCounts = {};
