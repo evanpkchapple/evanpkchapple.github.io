@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .slider-label {
+    margin-right: 8px;
+  }
+  
+  #tokenizedOutput {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+  }
+  
+  .token-underline {
+    display: inline-block;
+    border-bottom: 2px solid #000;
+    margin-right: 4px;
+  }
+
+.center-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.center-stack .box {
+    width: 60%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+textarea {
+  width: 100%;  /* Full width of the parent box */
+  max-width: 100%;  /* Prevent overflow */
+  box-sizing: border-box;  /* Includes padding and border in the width */
+  resize: vertical;  /* Only allow vertical resizing */
+  font-family: inherit;
+  font-size: 1em;
+}

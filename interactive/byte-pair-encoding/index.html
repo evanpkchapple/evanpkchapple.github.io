@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <Title>Game of Life</Title>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="bpe.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Evan Chapple">
+    </head>
+    <body>
+        <header>
+			<div class="container">
+				<h1>Evan Chapple</h1>
+				<nav>
+					<ul>
+                        <li><a href="../../index.html">Home</a></li>
+						<li><a href="../../project.html">Projects</a></li>
+						<li><a href="../../education.html">Education</a></li>
+                        <li><a href="../../interactive.html">Interactive</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+        <main>
+            <div class="center-stack">
+                <div class="box">
+                    <h1>Simple BPE Training & Tokenization Demo</h1>
+                </div>
+                <div class="box">
+                    <label for="trainFileSelect">Choose training text:</label>
+                    <select id="trainFileSelect" onchange="trainTokenizer()">
+                        <option value="data/A_Strange_Occurence_at_Owl_Creek_Bridge.txt">A Strange Occurence at Owl Creek Bridge</option>
+                        <option value="data/Canada_Wiki.txt">Wikipedia Page of Canada</option>
+                        <option value="data/US_Constitution.txt">The United States' Constitution</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label class="slider-label" for="bpeSlider">Apply BPE merges:</label>
+                    <input
+                    type="range"
+                    id="bpeSlider"
+                    min="0"
+                    max="200"
+                    step="1"
+                    value="10"
+                    oninput="updateSliderValue(); tokenizeInput()"
+                    />
+                    <span id="sliderValue">10</span> / <span id="maxMerges">200</span> possible
+                </div>
+                <div class="box">
+                    <label for="inputText">Text to tokenize:</label><br>
+                    <textarea
+                    id="inputText"
+                    rows="5"
+                    oninput="tokenizeInput()"
+                    ></textarea>
+                </div>
+                <div class="box">
+                    <h3>Tokenized Output:</h3>
+                    <div id="tokenizedOutput"></div>
+                </div>
+            </div>
+        </main>      
+        <footer>
+            <p>© 2024 Evan Chapple. All rights reserved.</p>
+        </footer>  
+        </body>
+        </html>
