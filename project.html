@@ -5,156 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Evan Chapple">
     <title>Evan Chapple | Projects</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Evan Chapple | Projects">
+    <meta property="og:description" content="Research and projects by Evan Chapple in Natural Language Processing and Computational Linguistics.">
+    <meta property="og:image" content="imgs/self.jpeg">
+    <meta property="og:url" content="https://evanpkchapple.github.io/project.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/theme-toggle.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Evan Chapple</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="interactive.html">Interactive</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="projects">
-            <h2>My Projects</h2>
-            <h3>Natural Language Processing</h3>
-            <ul>
-                <li>
-                    <h4>Voices Unheard</h4>
-                    <h5>Catapult 2025 @ Purdue</h5>
-                    <p>In this Hackathon, which took place over the course of 24 hours at Purdue University. I took part in developing the Voices Unheard project. This project fine-tuned a pipeline for transcribing and then translating AAVE for use in courtroom settings. The goal of the project was to tackle inequality within the United State's legal system, especially for African American citizens. The Devpost for this project can be found <a href="https://devpost.com/software/let-us-speak" target="_blank">here</a>.</p>
-                </li>
-                <li>
-                    <h4>LLM-Based Knowledge Graph Verbalisation</h4>
-                    <h5>To be submitted ACL 2025</h5>
-                    <p>In this paper, various prompting techniques are tested using the SotA LLaMa models to perform text generation directly into both English and Russian. The optimal approach to such generation includes a combination of RAG with property-overlap few-shots and a inplace Chain of Thought. The performance are then measured using various seen and unseen test sets for the target languages. In conclusion, the approach highlights significant improvements in multilingual text generation quality, demonstrating the potential for more effective and accurate Data-to-Text generation across diverse languages, specifically in English and Russian.</p>
-                </li>
-                <li>
-                    <h4>Multilingual Verbalisation of Knowledge Graphs</h4>
-                    <h5>To be submitted ACL 2025</h5>
-                    <p>In this work, we compare three different approaches for multilingual generation from knowledge graphs into six diverse languages (Arabic, Chinese, English, French, Russian, and Spanish): Generate into English and Machine Translating, Fine-tuning Machine Translation models, and Prompt Engineering using open source LLMs. Additionally, we put out a diverse Machine Translated training set and a curated humanly evaluated Test Set on all six languages.</p>
-                </li>
-                <li>
-                    <h4>Finnish-Inari Cognate Prediction</h4>
-                    <p>The project develops a deep learning model to predict cognates for endangered languages, initially trained on Spanish-French cognates and later on Finnish-Inari cognates. It aims to assist in the reconstruction of vocabulary for languages with limited resources, using an attention mechanism to enhance performance and explainability.</p>
-                    <div class="tooltip">
-                        <a href="papers/cognate_prediction.pdf" target="_blank">
-                            <img src="imgs/document.png" alt="View Paper">
-                            <span class="tooltiptext">View Paper</span>
-                        </a>
+    <div class="container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+            </svg>
+        </button>
+        <header>
+            <div class="header-content">
+                <img src="imgs/self.jpeg" alt="Evan Chapple" class="profile-photo">
+                <div>
+                    <h1>Evan Chapple</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="project.html" class="active">Projects</a></li>
+                            <li><a href="education.html">Education</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="research">
+                <h2>Research</h2>
+                <div class="publications-grid">
+                    <div class="publication-entry">
+                        <div class="publication-title">Identifying a Circuit for Decision-Making in Qwen3-4B</div>
+                        <div class="publication-authors"><b>EPK Chapple</b></div>
+                        <div class="publication-venue">Master's Thesis</div>
                     </div>
-                    <div class="tooltip">
-                        <a href="https://github.com/evanpkchapple/cognate-prediction" target="_blank">
-                            <img src="imgs/github-logo.png" alt="View Code">
-                            <span class="tooltiptext">View Code</span>
-                        </a>
+
+                    <div class="publication-entry">
+                        <div class="publication-title">Can LLMs subtract numbers?</div>
+                        <div class="publication-authors">M Jobanputra, NP Walter, M Mehta, B Veseli, <b>EPK Chapple</b>, Y Wang, S Chetani, E Pavlick, A Vergari, V Demberg</div>
+                        <div class="publication-venue">MathNLP 2025: The 3rd Workshop on Mathematical Natural Language @ EMNLP 2025</div>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2511.02795" target="_blank">[paper]</a>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <h4>Next-Word and Variant Prediction for Sardinian Dialects</h4>
-                    <p>This project introduces a next-word prediction algorithm specifically designed for the four main dialects of the Sardinian language, utilizing a corpus derived from Sardinian texts on Wikipedia, which was processed to include variant tagging. The algorithm, based on a Long Short-Term Memory (LSTM) neural network architecture, aims to enhance linguistic technology for under-resourced languages by adapting to the context and dialect variant, showing that computational models can still be valuable for languages with limited data.</p>
-                    <div class="tooltip">
-                        <a href="papers/honors_thesis.pdf" target="_blank">
-                            <img src="imgs/document.png" alt="View Paper">
-                            <span class="tooltiptext">View Paper</span>
-                        </a>
+
+                    <div class="publication-entry">
+                        <div class="publication-title">Fine-Tuning, Prompting and RAG for Knowledge Graph-to-Russian Text Generation. How do these Methods generalise to Out-of-Distribution Data?</div>
+                        <div class="publication-authors">A Nikiforovskaya, WES Martinez, <b>EPK Chapple</b>, C Gardent</div>
+                        <div class="publication-venue">Proceedings of the 18th International Natural Language Generation Conference</div>
+                        <div class="publication-links">
+                            <a href="https://aclanthology.org/2025.inlg-main.26/" target="_blank">[paper]</a>
+                        </div>
                     </div>
-                    <div class="tooltip">
-                        <a href="https://github.com/evanpkchapple/sardinian_variant_prediction" target="_blank">
-                            <img src="imgs/github-logo.png" alt="View Code">
-                            <span class="tooltiptext">View Code</span>
-                        </a>
+
+                    <div class="publication-entry">
+                        <div class="publication-title">Multilingual Verbalisation of Knowledge Graphs</div>
+                        <div class="publication-authors">Y Song, WS Martinez, A Nikiforovskaya, <b>EPK Chapple</b>, C Gardent</div>
+                        <div class="publication-venue">Findings of the Association for Computational Linguistics: EMNLP 2025</div>
+                        <div class="publication-links">
+                            <a href="https://aclanthology.org/2025.findings-emnlp.60/" target="_blank">[paper]</a>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <h4>Russian Preposition Use with Social Media Names</h4>
-                    <p>This study examines the variation in preposition usage before social media names (SMNs) in Russian, comparing the use between Latin and Cyrillic orthographies within a subset of the Russian National Media corpus. It was discovered that different SMNs exhibited varied levels of preposition usage inconsistency across orthographies, which was not directly linked to the prevalence of these SMNs in Russia, challenging assumptions about the influence of script on language structure in digital communication contexts.</p>
-                    <div class="tooltip">
-                        <a href="papers/russian_preposition_social_media.pdf" target="_blank">
-                            <img src="imgs/document.png" alt="View Paper">
-                            <span class="tooltiptext">View Paper</span>
-                        </a>
+
+                    <div class="publication-entry">
+                        <div class="publication-title">Voices Unheard</div>
+                        <div class="publication-authors">Evan Chapple, et al.</div>
+                        <div class="publication-venue">Catapult 2025 @ Purdue</div>
+                        <div class="publication-links">
+                            <a href="https://devpost.com/software/let-us-speak" target="_blank">[paper]</a>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <h4>Next-Word Prediction Algorithm for Chukchi</h4>
-                    <p>This paper presents a bi-gram text prediction system developed for the Chukchi language, as part of a global classroom project with students from Indiana University, Bloomington, and the Higher School of Economics, Moscow. The system, tailored to the polysynthetic nature of Chukchi, focuses on morpheme-level analysis instead of traditional word-level, improving prediction accuracy by considering the linguistic structure unique to Chukchi. The project highlights the challenges and adaptations necessary to address while developing predictive text technologies for such low-resource languages.</p>
-                    <div class="tooltip">
-                        <a href="papers/predictive_keyboard_chukchi.pdf" target="_blank">
-                            <img src="imgs/document.png" alt="View Paper">
-                            <span class="tooltiptext">View Paper</span>
-                        </a>
+
+                    <div class="publication-entry">
+                        <div class="publication-title">Finnish-Inari Cognate Prediction</div>
+                        <div class="publication-authors">Evan Chapple</div>
+                        <div class="publication-venue">Computational Linguistics Project</div>
+                        <div class="publication-links">
+                            <a href="papers/cognate_prediction.pdf" target="_blank">[pdf]</a>
+                            <a href="https://github.com/evanpkchapple/cognate-prediction" target="_blank">[code]</a>
+                        </div>
                     </div>
-                </li>
-            </ul>
-            <h3>Psychology</h3>
-            <ul>
-                <li>
-                    <h4>Effects of Gender-Exclusive Language on Felt Ostracism</h4>
-                    <p>This study investigates the effects of gender-exclusive language (GEL) on need satisfaction (NS) and feelings of ostracism, revealing that women may experience marginally lower NS and increased feelings of ostracism compared to men in scenarios featuring GEL. Conducted through a survey with two distinct conditions—one using GEL and the other employing gender-inclusive language — this research highlights how subtle linguistic choices can influence individual perceptions and emotional responses, irrespective of the explicit content of the dialogue. The findings suggest a nuanced interaction between language use and gender, emphasizing the importance of considering linguistic inclusivity in communication practices.</p>
-                    <div class="tooltip">
-                        <a href="papers/gender_ostracism.pdf" target="_blank">
-                            <img src="imgs/document.png" alt="View Paper">
-                            <span class="tooltiptext">View Paper</span>
-                        </a>
+
+                    <div class="publication-entry">
+                        <div class="publication-title">Sardinian Next-Word & Variant Prediction</div>
+                        <div class="publication-authors">Evan Chapple</div>
+                        <div class="publication-venue">Undergraduate Honors Thesis</div>
+                        <div class="publication-links">
+                            <a href="papers/honors_thesis.pdf" target="_blank">[pdf]</a>
+                            <a href="https://github.com/evanpkchapple/sardinian_variant_prediction" target="_blank">[code]</a>
+                        </div>
                     </div>
-                </li>
-            </ul>
-            <h3>Dictionary Work</h3>
-            <ul>
-                <li>
-                    <h4>Mountain Ute</h4>
-                    <p>I worked with data collected in the field in order to create and verify thousands of lexicographic entries. Additionally, I was charged with transcribing and cleaning audios along with mapping morphological relationships between words. This culminated in the release of an E-learning platform called <a href="https://nuuwayga.com/" target="_blank">Nuuwayga</a>.</p>
-                    <div class="tooltip">
-                        <a href="https://dictionary.utelanguage.org/" target="_blank">
-                            <img src="imgs/dictionary.png" alt="View Dictionary">
-                            <span class="tooltiptext">View Dictionary</span>
-                        </a>
+
+                    <div class="publication-entry">
+                        <div class="publication-title">Chukchi Next-Word Prediction</div>
+                        <div class="publication-authors">Evan Chapple, et al.</div>
+                        <div class="publication-venue">Global Classroom Project</div>
+                        <div class="publication-links">
+                            <a href="papers/predictive_keyboard_chukchi.pdf" target="_blank">[pdf]</a>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <h4>Cowlitz Coastal Salish</h4>
-                    <p>I helped in the creation of a working Cowlitz Salish dictionary from the Grammar created by Dale Kinkade and others. In particular, I helped on tasks regarding deciphering syntactic roles and sentence structuring by comparative analysis.</p>
-                    <div class="tooltip">
-                        <a href="https://dictionary.cowlitzsalish.org/" target="_blank">
-                            <img src="imgs/dictionary.png" alt="View Dictionary">
-                            <span class="tooltiptext">View Dictionary</span>
-                        </a>
+
+                    <div class="publication-entry">
+                        <div class="publication-title">Gender-Exclusive Language on Felt Ostracism</div>
+                        <div class="publication-authors">Evan Chapple</div>
+                        <div class="publication-venue">Psychology Capstone Research</div>
+                        <div class="publication-links">
+                            <a href="papers/gender_ostracism.pdf" target="_blank">[pdf]</a>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <h4>Eastern Shoshone</h4>
-                    <p>I helped coordinate and participate in a rapid word collection (RWC) performed by The Language Conservancy for the Native American elders of the Eastern Shoshone tribe. The process involved focusing on areas of the vocabulary in which records were lacking and prompting the elders for utterances of each word which were then transcribed.</p>
-                </li>
-            </ul>
-            <h3>Personal Project</h3>
-            <ul>
-                <li>
-                    <h4>Paper Manager</h4>
-                    <p>Paper Manager is a software is made to store and access papers for use by students and academics. It is built using the Tauri framework with a vanilla frontend using HTML and JS and Rust as the backend, leading to blazing fast performance. The current versions have many useful features such as easy citing, tagging, filtering, and much more. The version will be officially released to the public in the coming weeks.</p>
-                </li>
-                <li>
-                    <h4>Sentiment Analysis of Movie Reviews - BERT</h4>
-                    <p>This project introduced me to the basics of integrating a BERT model from HuggingFace into a Pytorch model. It was used to perform a binary classification task to decide whether reviews from aclIMBD dataset were positive or negative.</p>
-                    <div class="tooltip">
-                        <a href="https://github.com/evanpkchapple/BERT-binary-classification" target="_blank">
-                            <img src="imgs/github-logo.png" alt="View Code">
-                            <span class="tooltiptext">View Code</span>
-                        </a>
+                </div>
+            </section>
+
+            <section id="other-work">
+                <h2>Dictionary Work</h2>
+                <div class="publications-grid">
+                    <div class="publication-entry">
+                        <div class="publication-title">Mountain Ute</div>
+                        <div class="publication-authors">The Language Conservancy</div>
+                        <div class="publication-venue">Lexicographer & Transcriber</div>
+                        <div class="publication-links">
+                            <a href="https://dictionary.utelanguage.org/" target="_blank">[dictionary]</a>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                    <div class="publication-entry">
+                        <div class="publication-title">Cowlitz Coastal Salish</div>
+                        <div class="publication-authors">The Language Conservancy</div>
+                        <div class="publication-venue">Syntactic Role Analysis</div>
+                        <div class="publication-links">
+                            <a href="https://dictionary.cowlitzsalish.org/" target="_blank">[dictionary]</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section id="contacts">
+            <h2>Contact</h2>
+            <p>
+                <a href="https://scholar.google.com/citations?user=h_rRYt4AAAAJ&hl=en" target="_blank">Google Scholar</a> · 
+                <a href="https://www.linkedin.com/in/evan-chapple-0b7a1aa6/" target="_blank">LinkedIn</a> · 
+                <a href="https://github.com/evanpkchapple/" target="_blank">GitHub</a>
+            </p>
         </section>
-    </main>
-    <footer>
-        <p>© 2024 Evan Chapple. All rights reserved.</p>
-    </footer>
+
+        <footer>
+            <p>© 2026 Evan Chapple</p>
+        </footer>
+    </div>
 </body>
 </html>

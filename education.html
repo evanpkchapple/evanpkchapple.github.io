@@ -5,99 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Evan Chapple">
     <title>Evan Chapple | Education</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Evan Chapple | Education">
+    <meta property="og:description" content="Educational background of Evan Chapple, Natural Language Processing (NLP) Master's student.">
+    <meta property="og:image" content="imgs/self.jpeg">
+    <meta property="og:url" content="https://evanpkchapple.github.io/education.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/theme-toggle.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Evan Chapple</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="interactive.html">Interactive</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="timeline">
-            <div class="timeline-line"></div>
-            <ul>
-                <li>
-                    <div class="timeline-arrow"></div>
-                    <div class="timeline-content">
-                        <div class="left-col">
+    <div class="container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+            </svg>
+        </button>
+        <header>
+            <div class="header-content">
+                <img src="imgs/self.jpeg" alt="Evan Chapple" class="profile-photo">
+                <div>
+                    <h1>Evan Chapple</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="education.html" class="active">Education</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <ul>
+                        <li>
                             <img src="imgs/uni-saarland.png" alt="Universität des Saarlandes" class="school-logo">
-                            <h6>2024-2025</h6>
-                        </div>
-                        <div class="right-col">
-                            <h2>Universität des Saarlandes</h2>
-                            <h3>Language and Science Technology MSc</h3>
-                            <p>Erasmus Mundus LCT</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-arrow"></div>
-                    <div class="timeline-content">
-                        <div class="left-col">
+                            <div class="right-col">
+                                <h2>Universität des Saarlandes</h2>
+                                <h3>Language Science and Technology MSc · 2024-2025</h3>
+                                <p>Erasmus Mundus LCT Program · GPA 1.2/5.0 · Distinction: Sehr Gut</p>
+                            </div>
+                        </li>
+                        <li>
                             <img src="imgs/univ-lorraine.jpeg" alt="Université de Lorraine" class="school-logo">
-                            <h6>2023-2024</h6>
-                        </div>
-                        <div class="right-col">
-                            <h2>Université de Lorraine</h2>
-                            <h3>Natural Language Processing MSc</h3>
-                            <p>
-                            Erasmus Mundus LCT<br>
-                            GPA: 16.9/20<br>
-                            Rank: 2/35<br>
-                            Mention: Très Bien<br>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-arrow"></div>
-                    <div class="timeline-content">
-                        <div class="left-col">
+                            <div class="right-col">
+                                <h2>Université de Lorraine</h2>
+                                <h3>Natural Language Processing MSc · 2023-2024</h3>
+                                <p>Erasmus Mundus LCT · GPA 17.66/20.00 · Distinction: Très Bien</p>
+                            </div>
+                        </li>
+                        <li>
                             <img src="imgs/indiana-university.png" alt="Indiana University" class="school-logo">
-                            <h6>2019 - 2023</h6>
-                        </div>
-                        <div class="right-col">
-                            <h2>Indiana University</h2>
-                            <h3>Computational Linguistics BS<br>Psychology BA</h3>
-                            <p>
-                            GPA: 3.97/4.00<br>
-                            Honors in Linguistics<br>
-                            Hutton Honor's Notation<br>
-                            Highest Distinction
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-arrow"></div>
-                    <div class="timeline-content">
-                        <div class="left-col">
+                            <div class="right-col">
+                                <h2>Indiana University</h2>
+                                <h3>BS Computational Linguistics & BA Psychology · 2019-2023</h3>
+                                <p>GPA: 3.97/4.00 · Honors in Linguistics · Highest Distinction</p>
+                            </div>
+                        </li>
+                        <li>
                             <img src="imgs/purdue-university.jpg" alt="Purdue University" class="school-logo">
-                            <h6>2018-2019</h6>
-                        </div>
-                        <div class="right-col">
-                            <h2>Purdue University</h2>
-                            <h3>Non-Degree Seeking</h3>
-                            <p>
-                            GPA: 3.7/4.00<br>
-                            Part Time during High School
-                            </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <p>© 2024 Evan Chapple. All rights reserved.</p>
-    </footer>
+                            <div class="right-col">
+                                <h2>Purdue University</h2>
+                                <h3>Non-Degree Seeking · 2018-2019</h3>
+                                <p>GPA: 3.7/4.00 · Part-time during high school</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <section id="contacts">
+            <h2>Contact</h2>
+            <p>
+                <a href="https://scholar.google.com/citations?user=h_rRYt4AAAAJ&hl=en" target="_blank">Google Scholar</a> · 
+                <a href="https://www.linkedin.com/in/evan-chapple-0b7a1aa6/" target="_blank">LinkedIn</a> · 
+                <a href="https://github.com/evanpkchapple/" target="_blank">GitHub</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2026 Evan Chapple</p>
+        </footer>
+    </div>
 </body>
 </html>
