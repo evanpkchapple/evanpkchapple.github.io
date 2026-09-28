@@ -382,8 +382,44 @@ footer {
     background: transparent;
 }
 
+/* Banner photo */
+.banner {
+    position: relative;
+    margin: 0 0 30px;
+}
+
+.banner figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.dark-theme .banner img {
+    filter: brightness(0.9);
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    .banner img {
+        aspect-ratio: 2 / 1;
+    }
+
     .publications-grid {
         grid-template-columns: 1fr;
     }
